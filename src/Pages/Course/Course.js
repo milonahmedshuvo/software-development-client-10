@@ -8,7 +8,6 @@ const Course = () => {
     const course=useLoaderData()
    
 
-
     return (
         <div className='flex mt-20 mr-2 '>
 
