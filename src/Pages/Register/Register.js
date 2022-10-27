@@ -31,8 +31,7 @@ const {createUser, userUpdateProfile}=useContext(AuthContext)
          })    
     }
 
-
-    const handleProfileUpdate=(name, photourl)=>{
+   const handleProfileUpdate=(name, photourl)=>{
         const objectResult={
             displayName:name,
             photoURL: photourl,
