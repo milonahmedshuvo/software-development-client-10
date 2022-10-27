@@ -25,13 +25,13 @@ export const router=createBrowserRouter([
          path:'/course',
          element: <Course></Course>,
          loader:()=>{
-            return fetch('http://localhost:5000/course')
+            return fetch('https://react-assignment-10-server.vercel.app/course')
          }
         },
         {
          path:'/datails/:id',
          loader:({params})=>{
-         return fetch(`http://localhost:5000/course/${params.id}`)
+         return fetch(`https://react-assignment-10-server.vercel.app/course/${params.id}`)
          },
          element:<Datails></Datails>
 
@@ -39,7 +39,7 @@ export const router=createBrowserRouter([
         {
          path:'/check/:id',
          loader:({params})=>{
-            return fetch(`http://localhost:5000/course/${params.id}`)
+            return fetch(`https://react-assignment-10-server.vercel.app/course/${params.id}`)
          },
          element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
         },
