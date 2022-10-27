@@ -3,6 +3,8 @@ import React from 'react';
 
 
 
+
+
 const Questions = () => {
     return (
         <div className='md:w-1/2 lg:w-1/2 mx-auto mt-28 p-8 drop-shadow-lg rounded-xl bg-indigo-400'>
